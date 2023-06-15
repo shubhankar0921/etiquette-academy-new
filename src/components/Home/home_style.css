@@ -1,0 +1,259 @@
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    flex-direction: column;
+}
+
+.quote>h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -4;
+}
+
+.down_home {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 200px;
+    animation-name: down_home_anime;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    position: relative;
+    top: 0px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: -1;
+    background-image: url("../assets/down-arrow.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* .down_home:hover {
+    border: 2px solid black;
+} */
+
+@keyframes down_home_anime {
+    33% {
+        top: 10px;
+    }
+    66% {
+        top: -10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.author {
+    position: absolute;
+    right: 100px;
+    margin-top: -100px;
+    z-index: -1;
+}
+
+.header {
+    background: linear-gradient( to bottom right, #5B7FFF, #33CCFC);
+    background-size: cover;
+    margin-top: 70px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.first {
+    margin-top: 400px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.image {
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+}
+
+#first_image {
+    background-image: url("https://img.freepik.com/premium-vector/business-man-study-online-course-mentor-explain-computer-learn-flat-outline-style_90661-1096.jpg?w=996");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    background-position: center;
+}
+
+#second_image {
+    background-image: url("https://img.freepik.com/free-vector/illustrated-woman-being-intern-company_23-2148726151.jpg?w=740&t=st=1686723737~exp=1686724337~hmac=9db7432f132913726a6a9506275f213538a8213c28eb7c66156cf5156acc5c01");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    background-position: center;
+}
+
+.content_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content {
+    font-size: 35px;
+}
+
+#first {
+    margin-top: 200px;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: dodgerblue;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creator {
+    color: white;
+}
+
+.name_of_website {
+    font-size: 20px;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-direction: column;
+    height: 80%;
+}
+
+.link_img {
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width:1024px) {
+    .quote>h1 {
+        font-size: 35px;
+    }
+    .content {
+        font-size: 30px;
+    }
+    #first_image {
+        height: 500px;
+        width: 500px;
+    }
+    #second_image {
+        height: 500px;
+        width: 500px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        font-size: 20px;
+    }
+    #first_image {
+        height: 450px;
+        width: 450px;
+    }
+    #second_image {
+        height: 400px;
+        width: 400px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:425px) {
+    .content_div {
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+    #first {
+        margin-bottom: 100px;
+    }
+    .quote>h1 {
+        font-size: 25px;
+    }
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .author {
+        position: relative;
+        top: 150px;
+        left: 100px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:375px) {
+    .content_div {
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:320px) {
+    .content_div {
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #first_image {
+        height: 280px;
+        width: 280px;
+    }
+    #second_image {
+        height: 250px;
+        width: 250px;
+    }
+    .quote>h1 {
+        font-size: 20px;
+    }
+    .author {
+        position: relative;
+        top: 150px;
+        left: 50px;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}

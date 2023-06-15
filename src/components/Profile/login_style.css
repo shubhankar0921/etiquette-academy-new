@@ -1,0 +1,86 @@
+.login {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logincontent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_line {
+    font-size: 40px;
+    text-align: center;
+}
+
+.btn {
+    height: 100px;
+    width: 360px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid limegreen;
+    color: limegreen;
+    background-color: transparent;
+    border-radius: 50px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: lime;
+    color: white;
+}
+
+.image {
+    background-image: url("https://img.freepik.com/free-vector/two-factor-authentication-concept-illustration_114360-5280.jpg?w=740&t=st=1685623396~exp=1685623996~hmac=aa05f22dbe54d562a2ea06f56e4cba83718d71b498c964c30fd19decc26c47d3");
+    height: 500px;
+    width: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1024px) {
+    .btn {
+        height: 80px;
+        width: 288px;
+        font-size: 20px;
+    }
+    .top_line {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .btn {
+        height: 60px;
+        width: 216px;
+        font-size: 16px;
+    }
+    .top_line {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:425px) {
+    .login {
+        flex-direction: column;
+    }
+    .image {
+        height: 350px;
+        width: 350px;
+    }
+    .top_line {
+        font-size: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.close_btn {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+@media (max-width:425px) {
+    .close_btn {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.myCallContainer {
+    background-color: dodgerblue
+}
+
+.none {
+    width: 100vw;
+    height: 200px;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: dodgerblue;
+}
