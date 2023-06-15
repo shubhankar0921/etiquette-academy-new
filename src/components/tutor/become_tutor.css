@@ -39,3 +39,33 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+@media (max-width:425px) {
+    .Add {
+        padding-left: 20px;
+    }
+    .maintitle {
+        font-size: 30px;
+    }
+    .subtitle {
+        font-size: 30px;
+    }
+    .input_label {
+        font-size: 18px;
+    }
+    .input_form {
+        height: 30px;
+        width: 280px;
+        padding: 4px;
+        padding-left: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    .Add {
+        padding-left: 10px;
+    }
+}
